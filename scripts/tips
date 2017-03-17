@@ -1,0 +1,19 @@
+How to do some things:
+
+Setting console colour
+	First, import tc-functions like this:
+	. /etc/init.d/tc-functions
+	Then echo a colour with $GREEN etc.
+	Don't forget to restore with $NORMAL !
+Playing with calc
+	You can simulate expressions in brackets by making virtual stacks of calc:
+	calc 2*$(calc 4+8)
+Playing with wallpapers:
+	 ~/.setwallpaper and hsetroot
+	 NEW! run 'paper', or see ~/scripts/paper.sh
+Parameters in sh scripts:
+	$0 is the file name of the script as it launches
+	$1 onwards contain launch flags!
+Run in new console:
+	xterm -e [commands]
+	like:$ xterm -e chimera2 web/vimanual.html

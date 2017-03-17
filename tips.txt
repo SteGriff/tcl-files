@@ -1,0 +1,69 @@
+# Tiny core linux tips
+
+SG 2017-03-18
+
+## Facts (probably)
+
+The window manager is flwm
+The terminal window is aterm, it runs /bin/sh which might be a pointer to /bin/ash?
+It's probably all handled by busybox anyway
+You can use xterm isntead of aterm, aterm has a tranlucent bg, thats the only difference.
+the default aterm session is configured 
+
+cliorx is just a tcl utility for wrapping commands, dont know why
+
+## Use me
+
+You have to run backup to actually commit files to the pen drive!!
+I wrote a script called shutdown which does backup then shutdown
+
+User bins (or rather symlinks for user programs) go in ~/.local/bin/
+You can find out where something really lives using `which x` where x is some executable
+
+You can use alt+tab to change windows, just like in... windows...
+Close a window with Esc (like alt+f4)
+
+### Using ls
+
+Cyan items are links/symlinks
+blue items are directories
+white items are files
+
+## Customising TCL
+
+	cd /etc/sysconfig
+	ls
+
+Each item in here configures some component, like which program manages the desktop (flwm_topside) or the icon bar (wbar)
+So you can switch out components which is quite cool
+
+## Right click menu
+
+The menu options shown when you right click the desktop or a title bar come from ~/.wmx/
+What does wmx stand for?
+
+## Screen resolution
+
+I have obviously fixed the resolution to work with this netbook in the past. Which file initialises this setting?
+
+## Wifi
+
+The wifi command run from the wmx menu is /usr/local/bin/wifi.sh which can be run as just `sudo wifi.sh`
+the wifi progam actually comes from `/tmp/tcloop/wifi/user/local/bin/wifi.sh`
+
+
+## wbar
+
+wbar icons can be set in /usr/local/tce.icons
+
+## keyboard keymaps
+
+`/tmp/tcloop/kmaps/usr/share/kmap/uk.kmap`
+
+
+## Questions
+
+What is fltk - the flwm toolkit?
+How do we get a UK keyboard
+keyboard shortcuts and how to add more
+xmodmap looks like it adds key aliases

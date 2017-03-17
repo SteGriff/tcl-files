@@ -1,0 +1,16 @@
+Say we have  int x=9;  the address of x is given by &x.
+You normally have to cast this when you store it:
+int y=(int)&x;
+
+When declaring a function with a parameter by reference,
+ask like this:
+void increment(int *addressOfX){
+	*addressOfX += 1;
+}
+...increment(&myX);
+So the variable pointed to by the address of X (which is,
+of course, X itself) will increment.
+
+Ergo: Ask for the * to the ADDRESS;
+      Pass in the ADDRESS of the var!
+

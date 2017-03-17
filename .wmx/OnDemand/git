@@ -1,0 +1,2 @@
+#!/bin/sh
+ondemand -e git.tcz

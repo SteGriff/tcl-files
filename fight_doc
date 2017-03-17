@@ -1,0 +1,9 @@
+How does battle work?
+You can attack or block.
+If you attack, and:
+  The foe blocks: They block some or all damage.
+  The foe attacks: They also do damage to you.
+If you block, and:
+  The foe blocks: Nothing?
+  The foe attacks: Each damage the other.
+
